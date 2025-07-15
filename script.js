@@ -14,7 +14,7 @@ const canvas = document.getElementById("progressCanvas");
 
 const ctx = canvas.getContext("2d");
 
-// Fix canvas blur
+//===Canvas==
 function fixCanvasResolution() {
   const ratio = window.devicePixelRatio || 1;
   const width = canvas.offsetWidth;
@@ -120,7 +120,7 @@ setBtn.addEventListener("click", () => {
   }
 });
 
-// Show pause msg on tab switch
+// === Show pause msg on tab switch and also dispaly on the console
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "hidden") {
     pauseTimer();
@@ -131,7 +131,7 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 
-// === Network Information API ===
+// === Network Information API === show the realtime network speed
 const networkStatus = document.getElementById("network-status");
 function showNetworkInfo() {
   const net = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
@@ -143,7 +143,7 @@ function showNetworkInfo() {
 }
 showNetworkInfo();
 
-// === Geolocation API ===
+// === Geolocation API === To get the real-time location of the user
 const locationDiv = document.getElementById("location");
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
@@ -170,10 +170,10 @@ const tipObserver = new IntersectionObserver(entries => {
 });
 tipObserver.observe(tips);
 
-// === Streak Tracker ===
+// === Streak Tracker === store the streak in localstorage
 const streakDiv = document.getElementById("streak");
 function increaseStreak() {
-  let count = localStorage.getItem("streak") || 0;
+  let count = localStorage.getItem("streak") ||0
   count = parseInt(count) + 1;
   localStorage.setItem("streak", count);
   streakDiv.textContent = `🔥 Sessions Completed: ${count}`;
