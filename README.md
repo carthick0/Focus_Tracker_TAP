@@ -19,7 +19,7 @@ A smart, distraction-free productivity timer built using **Vanilla JavaScript**,
 
 ## 🌐 Live Demo
 
-> 🚀 Deployed on Vercel : (https://focus-tracker-1p2rlt0oo-carthick0s-projects.vercel.app/)
+> 🚀 Deployed on Vercel : ([https://focus-tracker-1p2rlt0oo-carthick0s-projects.vercel.app/](https://focus-tracker-tap-fdpb.vercel.app/))
 
 
 ---
@@ -39,10 +39,10 @@ A smart, distraction-free productivity timer built using **Vanilla JavaScript**,
 
 ## 📁 Folder Structure
 
-├── index.html # Main HTML layout
-├── style.css # Stylish responsive design
-├── script.js # Timer logic & Web API integration
-└── README.md # Project details
+-├── index.html # Main HTML layout
+-├── style.css # Stylish responsive design
+-├── script.js # Timer logic & Web API integration
+-└── README.md # Project details
 
 
 
