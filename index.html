@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Study Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📚 Smart Study Timer</h1>
+
+  <div id="location"></div>
+  <div id="network-status"></div>
+  <div id="streak"></div>
+
+  <div class="timer">
+    <span id="time">25:00</span>
+  </div>
+
+  <div class="timer-controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <input type="number" id="customTime" placeholder="Minutes" min="1" />
+    <button id="setBtn">Set Time</button>
+  </div>
+
+  <canvas id="progressCanvas"></canvas>
+
+  <div id="pause-msg">⏸️ Timer paused – You switched tabs</div>
+
+  <div id="tips">
+    💡 Tip: Keep distractions away and reward yourself after each session!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
